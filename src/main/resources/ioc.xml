@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--
+`<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -11,25 +12,32 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
 
-   <!-- <bean class="org.example.Car" name="car">
-        <property name="id" value="1" />
-        <property name="colour" value="black" />
-        <property name="name" value="audi" />
-         <property name="engin" ref="eng"/>
-    </bean>
+    <context:component-scan base-package="org.example" />
 
-    <bean class="org.example.Engin" name="eng">
-        <property name="id" value="1" />
-        <property name="name" value="tarbo" />
-        <property name="horsepower" value="5000" />
-     </bean>-->
+&lt;!&ndash;    <bean class="org.example.Car" name="car" autowire="byName">&ndash;&gt;
+&lt;!&ndash;        <property name="id" value="1" />&ndash;&gt;
+&lt;!&ndash;        <property name="colour" value="black" />&ndash;&gt;
+&lt;!&ndash;        <property name="name" value="audi" />&ndash;&gt;
+&lt;!&ndash;    </bean>&ndash;&gt;
 
-    <bean class="org.example.Car" name="car">
-        <constructor-arg value="1" index="0"/>
-        <constructor-arg value="audi"  index="1" />
-        <constructor-arg value="black"  index="2" />
-        <constructor-arg ref="eng" index="3" />
-    </bean>
+&lt;!&ndash;    <bean class="org.example.Engin" name="engin">&ndash;&gt;
+&lt;!&ndash;        <property name="id" value="1" />&ndash;&gt;
+&lt;!&ndash;        <property name="name" value="tarbo" />&ndash;&gt;
+&lt;!&ndash;        <property name="horsepower" value="5000" />&ndash;&gt;
+&lt;!&ndash;     </bean>&ndash;&gt;
+
+&lt;!&ndash;    <bean class="org.example.Engin" name="eng2">&ndash;&gt;
+&lt;!&ndash;        <property name="id" value="2" />&ndash;&gt;
+&lt;!&ndash;        <property name="name" value="CC" />&ndash;&gt;
+&lt;!&ndash;        <property name="horsepower" value="7000" />&ndash;&gt;
+&lt;!&ndash;    </bean>&ndash;&gt;
+
+&lt;!&ndash;    <bean class="org.example.Car" name="car">&ndash;&gt;
+&lt;!&ndash;        <constructor-arg value="1" index="0"/>&ndash;&gt;
+&lt;!&ndash;        <constructor-arg value="audi"  index="1" />&ndash;&gt;
+&lt;!&ndash;        <constructor-arg value="black"  index="2" />&ndash;&gt;
+&lt;!&ndash;        <constructor-arg ref="eng" index="3" />&ndash;&gt;
+&lt;!&ndash;    </bean>&ndash;&gt;
 
     <bean class="org.example.Engin" name="eng">
         <constructor-arg value="1" index="0"/>
@@ -39,3 +47,4 @@
 
 
 </beans>
+-->
